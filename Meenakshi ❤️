@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kailash ❤️ Meenakshi</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffd1dc, #fff);
+    text-align: center;
+    color: #c2185b;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.6em;
+    margin-top: 30px;
+    animation: fadeIn 2s;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0 15px;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+}
+
+.love-box {
+    background: white;
+    margin: 30px 15px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+footer {
+    margin: 40px 0;
+    font-size: 1.2em;
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    color: #ff4d6d;
+    font-size: 20px;
+    animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+    from {bottom: -10px; opacity: 1;}
+    to {bottom: 100%; opacity: 0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<h1>Kailash ❤️ Meenakshi</h1>
+<p>💖 Forever & Always 💖</p>
+
+<div class="love-box">
+<p>
+Meenakshi,<br><br>
+Tu meri zindagi ka sabse khoobsurat hissa hai ❤️<br>
+Teri smile meri taaqat hai,<br>
+tera saath meri duniya 🌍<br><br>
+
+Main wada karta hoon,<br>
+chahe kuch bhi ho jaaye,<br>
+**main hamesha sirf tera rahunga.**
+</p>
+</div>
+
+<button onclick="showLove()">Click Me 💌</button>
+
+<div class="gallery">
+<img src="img1.jpg">
+<img src="img2.jpg">
+<img src="img3.jpg">
+<img src="img4.jpg">
+<img src="img5.jpg">
+<img src="img6.jpg">
+<img src="img7.jpg">
+<img src="img8.jpg">
+</div>
+
+<div class="love-box">
+<p>
+Har photo ek kahaani hai,<br>
+aur har kahaani ka naam —<br><br>
+<strong>Meenakshi ❤️</strong>
+</p>
+</div>
+
+<footer>
+<p>With all my love,<br><strong>Kailash</strong> 💕</p>
+</footer>
+
+<script>
+function showLove() {
+    alert("I Love You So Much Meenakshi ❤️\nYou are my everything 💕");
+}
+
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (20 + Math.random() * 20) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}, 500);
+</script>
+
+</body>
+</html>
